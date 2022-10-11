@@ -1,0 +1,13 @@
+<p>dos works!</p>
+<!--<div *ngIf="infoService.data$ | async as info">
+    {{ info | json }}
+</div>-->
+<form  *ngIf="infoService.data$ | async as info">
+    <label for="">name</label>
+    <input type="text"  [value]="info?.name">
+
+    <label for="">password</label>
+    <input type="text" [value]="info?.password">
+
+
+</form>

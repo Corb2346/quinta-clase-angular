@@ -1,0 +1,10 @@
+<p>bebidas works!</p>
+
+<div *ngFor="let drink of drinks" >
+<label> {{drink.name}}</label>
+<img [src]="drink.imageUrl" alt="">
+<div *ngFor="let ingredient of drink.ingredients ">
+    <label >{{ingredient}}</label>
+</div>
+
+</div>
